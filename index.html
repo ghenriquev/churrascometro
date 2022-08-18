@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Churrascômetro</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="box-left">
+          <h1>Churrascômetro</h1>
+          <img
+            src="./assets/Group of friends dancing at outdoors barbecue party.jfif"
+            alt="Grupo de amigos dançando em churrasco"
+          />
+        </div>
+        <div class="box-right">
+          <h2>
+            Calcule a quantidade de carnes, cervejas e bebidas para seu
+            churrasco!
+          </h2>
+          <div class="inputs">
+            <input
+              type="number"
+              name="adultos"
+              id="adultos"
+              placeholder="Adultos"
+            />
+            <input
+              type="number"
+              name="criancas"
+              id="criancas"
+              placeholder="Crianças"
+            />
+            <input
+              type="number"
+              name="duracao"
+              id="duracao"
+              placeholder="Duração (h)"
+            />
+          </div>
+
+          <button id="calcular">Calcular</button>
+
+          <div id="resultado"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
