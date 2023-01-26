@@ -14,6 +14,7 @@ buttonCalcular.addEventListener("click", calcular);
 function calcular() {
   // Trocar todos esses ifs por switch
 
+  // ------------------- VALIDAÇÃO ------------------
   if (
     inputAdultos.value == 0 &&
     inputCriancas.value == 0 &&
@@ -26,6 +27,7 @@ function calcular() {
     alert("Favor inserir número de adultos!");
   } else if (!inputCriancas.value) {
     alert("Favor inserir número de crianças!");
+  // --------------------------------------------------------------
   } else {
     let quantidadeAdultos = inputAdultos.value;
     let quantidadeCriancas = inputCriancas.value;
