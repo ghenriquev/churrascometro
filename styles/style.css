@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Poppins";
   background-color: #fff;
@@ -20,12 +24,17 @@ body {
 }
 
 .box-left {
-  display: grid;
-  grid-template-rows: 10% auto;
-  grid-template-areas:
-    "title"
-    "image";
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  border-bottom: 2px solid #11266d;
+  margin: 5rem;
 }
 
 .box-left img {
@@ -46,17 +55,12 @@ body {
   justify-content: space-evenly;
 }
 
-h2 {
-  font-size: 16px;
+h1 {
+
 }
 
-h1 {
-  font-size: 24px;
-  padding: 15px;
-  text-align: center;
-  grid-area: title;
-  border-bottom: 2px solid #11266d;
-
+h2 {
+  font-size: 1.6rem;
 }
 
 .container input {
